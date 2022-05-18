@@ -51,6 +51,7 @@ export default function TodoApp() {
 
   return (
     <div className="todoContainer">
+      <h2>Todo List React App</h2>
       <form onSubmit={handleSubmit} className="todoCreateForm">
         <input
           onChange={handleInputChange}

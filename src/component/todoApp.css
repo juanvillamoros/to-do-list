@@ -1,76 +1,105 @@
-*{
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
   font-family: 'Lato';
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background-color: #111;
+}
+
 .todoContainer {
-    width: 500px;
-    margin: 10px auto;
-  
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .todoCreateForm {
-    display: flex;
-    gap: .5rem;
-  }
-  
-  .todoInput {
-    flex-grow: 1;
-    width: 100%;
-    padding: 10px;
-    border-radius: .3rem;
-    border: solid 1px #999;
-  }
-  
-  .buttonCreate {
-    border: none;
-    border-radius: .3rem;
-    background-color: rgb(26, 76, 169);
-    color: white;
-    padding: 10px 10px;
-  }
-  
-  .todosContainer {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    margin-top: 30px;
-  }
-  
-  .todo {
-    padding: .2px;
-  }
-  
-  .todoTitle {
-    flex: 1;
-    font-size: 20px;
-  }
-  .todoUpdateForm,
-  .todoInfo {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-  }
-  .button {
-    border: transparent;
-    border-radius: .3rem;
-    background-color: rgb(27, 92, 16);
-    color: white;
-    padding: 10px 20px;
-  }
-  
-  .buttonUpdate{
-    border: transparent;
-    border-radius: .3rem;
-    background-color: rgb(42, 122, 221);
-    color: white;
-    padding: 8px 23px;
-  }
-  .buttonDelete {
-    border: transparent;
-    border-radius: .3rem;
-    background-color: rgb(169, 26, 26);
-    color: white;
-    padding: 10px 10px;
-  }
+  background: white;
+  width: 350px;
+  margin: 200px auto;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.todoContainer h2{
+  background: #03a9F4;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 300;
+}
+.todoCreateForm {
+  padding: 9px;
+  display: flex;
+  gap: .5rem;
+}
+
+.todoInput {
+  flex-grow: 1;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: .3rem;
+  border: solid 1px rgb(42, 122, 221);
+}
+
+.buttonCreate {
+  border: none;
+  border-radius: .3rem;
+  background-color: rgb(26, 76, 169);
+  color: white;
+  padding: 10px 10px;
+}
+
+.todosContainer {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+
+}
+
+.todo {
+  position: relative;
+
+  padding: 8px;
+}
+
+.todoTitle {
+  flex: 1;
+  font-size: 20px;
+  border: rgba(0,0,0,0.1);
+  color: black;
+}
+
+.todoUpdateForm,
+.todoInfo {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+  background: #fff;
+  gap: .5rem;
+}
+
+
+.button {
+  border: transparent;
+  border-radius: .3rem;
+  background-color: rgb(27, 92, 16);
+  color: white;
+  padding: 10px 20px;
+}
+
+.buttonUpdate {
+  border: transparent;
+  border-radius: .3rem;
+  background-color: rgb(42, 122, 221);
+  color: white;
+  padding: 8px 23px;
+}
+
+.buttonDelete {
+  border: transparent;
+  border-radius: .3rem;
+  background-color: rgb(169, 26, 26);
+  color: white;
+  padding: 10px 10px;
+}

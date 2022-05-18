@@ -43,6 +43,7 @@ export default function Todo({ item, onUpdate, onComplete, onDelete }) {
         ) : (
           <div className="todoInfo">
             <input
+
               type={"checkbox"}
               onChange={handleCheckboxChange}
               checked={item.checked}

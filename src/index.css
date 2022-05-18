@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&family=Roboto:ital,wght@1,300&display=swap');
 
 body {
-  font-family: 'Lato';
-  background-color: #5B5A5C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background-color: #111;
 }
 
 code {
